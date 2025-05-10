@@ -20,7 +20,7 @@ if not hasattr(np, 'bool'):
 
 # 设置页面标题和布局
 st.set_page_config(
-    page_title="Postoperative Delirium Risk Prediction Model for Cardiopulmonary Bypass Surgery Patients",
+    page_title="Postoperative Delirium Risk Prediction Model in Patients Undergoing Cardiopulmonary Bypass Cardiac Surgery",
     page_icon="🏥",
     layout="wide"
 )
@@ -65,7 +65,7 @@ def main():
     global feature_names, feature_dict, variable_descriptions
     
     # 侧边栏标题
-    st.sidebar.title("Postoperative Delirium Risk Prediction Model for Cardiopulmonary Bypass Surgery Patients")
+    st.sidebar.title("Postoperative Delirium Risk Prediction Model in Patients Undergoing Cardiopulmonary Bypass Cardiac Surgery")
     st.sidebar.image("https://img.freepik.com/free-vector/hospital-logo-design-vector-medical-cross_53876-136743.jpg", width=200)
     
     # 添加系统说明到侧边栏
@@ -99,7 +99,7 @@ def main():
             st.markdown(f"**{feature_dict[feature]}**: {variable_descriptions[feature]}")
     
     # 主页面标题
-    st.title("Postoperative Delirium Risk Prediction Model for Cardiopulmonary Bypass Surgery Patients")
+    st.title("Postoperative Delirium Risk Prediction Model in Patients Undergoing Cardiopulmonary Bypass Cardiac Surgery")
     st.markdown("### Based on XGBoost Model")
     
     # 加载模型
